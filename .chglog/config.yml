@@ -1,0 +1,37 @@
+style: github
+template: CHANGELOG.tpl.md
+info:
+  title: CHANGELOG
+  repository_url: https://github.com/@GH_USER@/@GH_REPO@
+options:
+  commits:
+    filters:
+      type:
+        - break
+        - build
+        - doc
+        - example
+        - feat
+        - fix
+        - loc
+        - misc
+        - perf
+        - refactor
+        - test
+  commit_groups:
+    title_maps:
+      break: 🚨 Breaking Changes
+      build: 📦 Build
+      doc: 📚 Documentation
+      example: 🛠 Examples
+      feat: ✨ New Features
+      fix: 🐛 Bug Fixes
+      perf: ⚡️ Performance
+      refactor: ♻️ Refactors
+      test: 🚦 Tests
+  header:
+    pattern: "^(\\w*)(?:\\(([\\w\\$\\.\\-\\*\\s]*)\\))?\\:\\s(.*)$"
+    pattern_maps:
+      - Type
+      - Scope
+      - Subject
